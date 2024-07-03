@@ -1,0 +1,107 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  padding: 20px;
+  background-color: #DDD; 
+  border: 1px solid #DDD; 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(27, 27, 27, 0.1); 
+}
+
+.contactform {
+  margin-bottom: 20px;
+}
+
+form legend {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form fieldset {
+  border: none;
+  padding-right: 2rem;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3362b8; 
+  color: #F5F5F5;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+  background-color: #6495ED;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* M Queries */
+
+@media (min-width: 50rem) {
+  .Group-name-email{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 5px;
+  }
+
+
+}
+
+@media (max-width: 25rem) {
+  .wrapper {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 25rem) and (max-width: 40rem) {
+  .wrapper {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 40rem) and (max-width: 50rem) {
+  .wrapper {
+    padding: 20px;
+  }
+}
+
